@@ -1,0 +1,11 @@
+[
+    {"AUTHORIZE_URL": ""},
+    {"APP_ID": },
+    {"VERSION": ""},
+    {"TOKEN": ""}
+]
+
+
+
+
+
