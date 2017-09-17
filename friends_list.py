@@ -45,7 +45,10 @@ for i, user in enumerate(users_list):
     user_friends_response = requests.get('https://api.vk.com/method/friends.get', params)
     # print(user_friends_response.json()['response']['items'][2])
     user_friends_list = set(user_friends_response.json()['response']['items'])
-    print(len(user_friends_list))
+    # print(user_friends_list)
+    # d = set.intersection(user_friends_list)
+    users_list.intersection_update(user_friends_list)
+    print(users_list)
 # response = requests.get('https://api.vk.com/method/friends.get', params)
-# pprint(response.json())
+# pprint(response.text)
 
